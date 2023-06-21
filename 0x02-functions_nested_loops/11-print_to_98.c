@@ -1,12 +1,22 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * add - a function that adds two integers and returns the result
- * @a: int
- * @b: int
- * Return: sum
+ * print_to_98 - a function that prints all natural numbers from n to 98
+ * @n: int
+ * Return: void
  */
-int add(int a, int b)
+void print_to_98(int n)
 {
-	return (a + b);
+	if (n > 98)
+	{
+		for (; n > 98; n--)
+			printf("%d, ", n);
+		printf("%d\n", n);
+	}
+	else
+	{
+		for (; n < 98; n++)
+			printf("%d, ", n);
+		printf("%d\n", n);
+	}
 }
